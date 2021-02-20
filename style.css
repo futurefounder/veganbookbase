@@ -247,7 +247,7 @@ footer {
         animation: gradientAnimation 40s ease infinite;
         }
 }
-
+/*
 @media(max-width: 900px) {
 
 .hero {
@@ -305,8 +305,8 @@ footer {
   }
    
 }
-
-@media(max-width: 500px) {
+*/
+@media(max-width: 900px) {
 
   .hero {
       height: 50vh;
