@@ -15,30 +15,10 @@
 	100% { background-position: 0% 30%, 0 0;}
 }
 
-h3 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	color: #000;
-	font : normal 600 72px/1 'Ubuntu';
-    text-shadow: 1px 1px 2px #d8f3dc, 0 0 25px #d8f3dc, 0 0 5px #1b4332;
-	text-align: center;
-	white-space: nowrap;
-}
-
-h3 span {
-	display: block;
-	margin-top: 1em;
-	font-size: 40px;
-	font-weight: 300;
-}      
-
 /* CSS VARIABLES */
 :root {
-  --primary: #081c15; 
-  --light: #F3F3F3;
+  --primary: #E3F2EB; 
+  --light: #0C1D16;
   --dark: 	#686868;
 }
 
@@ -58,12 +38,34 @@ html, body {
 
 img {
   max-width: 100%;
- 
+  border-radius: 5%;
 }
 
 h1 {
   padding-top: 60px;  
 }
+
+h3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #000;
+	font : normal 600 72px/1 'Ubuntu';
+    text-shadow: 1px 1px 2px #d8f3dc, 0 0 25px #d8f3dc, 0 0 5px #1b4332;
+	text-align: center;
+	white-space: nowrap;
+ 
+}
+
+h3 span {
+	display: block;
+	margin-top: 1em;
+	font-size: 40px;
+	font-weight: 300;
+  
+}      
 
 .wrapper {
   margin: 0;
@@ -109,9 +111,10 @@ header {
 }
 
 #logo {
-  color: #fff;  
+  color: #0C1D16;  
   margin: 0; 
-  padding: 0; 
+  padding: 0;
+  
 }
 
 
@@ -168,14 +171,14 @@ header {
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);  
   transform: scale(1.2);
-  -webkit-box-shadow: 0px 0px 100px 0px rgba(183,228,199,1);
-  -moz-box-shadow: 0px 0px 100px 0px rgba(183,228,199,1);
-  box-shadow: 0px 0px 100px 0px rgba(183,228,199,1);
+ /* -webkit-box-shadow: 0px 0px 100px 0px rgba(12,29,22,1);
+  -moz-box-shadow: 0px 0px 100px 0px rgba(12,29,22,1);*/
+
 
 }
 
 .box img {  
-  border-radius: 3px;
+  border-radius: 8px;
 }
 
 /* LINKS */
@@ -183,6 +186,10 @@ header {
 a.score {
   color: #F3F3F3;
   
+}
+.book-link {  
+  color: #0c1d16;
+  font-weight: bolder;
 }
 
 .link {
@@ -213,9 +220,17 @@ a.score {
 }
 
 .logo {
-  color: var(--dark);
+  color: #0C1D16;
   text-decoration: none;
 }
+
+.review {
+color: #0C1D16;
+font-weight: lighter;
+font-size: small;
+
+}
+
 
 /* FOOTER */
 footer {
@@ -231,11 +246,12 @@ footer {
 }
 
 .wavy {
-  color: #74C69D;
+  color: #709f88;
   -webkit-text-decoration: #D8F3DC underline;
   text-decoration: #D8F3DC underline;
 
 }
+
 
 /* MEDIA QUERIES */
 
@@ -246,6 +262,21 @@ footer {
         -webkit-animation: gradientAnimation 40s ease infinite;
         animation: gradientAnimation 40s ease infinite;
         }
+
+        .netflixLogo {
+          max-width: 100%;
+          margin: auto;
+          padding: 0 120px 0 10px;
+          /*padding-right: 100px;*/
+          font-size: 30px;
+      
+        }
+        h3 span {
+          display: block;
+          margin-top: 1em;
+          font-size: 100px;
+          font-weight: 300;
+        }     
 }
 /*
 @media(max-width: 900px) {
@@ -316,7 +347,7 @@ footer {
       }    
 
   .wrapper {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   header {
@@ -345,11 +376,11 @@ footer {
   .main-nav {
     display: grid;
     grid-gap: 0px;
-    padding: 0 100px 0 0;
+    padding: 0 130px 0 0;
     /*padding-right: 100px;*/
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .sub-nav a {
@@ -367,7 +398,7 @@ footer {
 
   h3 {
 	position: relative;
-	top: 35%;
+	top: 43%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
@@ -380,7 +411,7 @@ footer {
   
 }
 
-h3 span {
+  h3 span {
 	display: block;
 	margin-top: 1em;
 	font-size: 40px;
@@ -389,7 +420,7 @@ h3 span {
 
   .box {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 60px;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;    
   }
@@ -406,6 +437,7 @@ h3 span {
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
+    color: #0C1D16;
   }
 
   .sub-links ul {
@@ -416,7 +448,11 @@ h3 span {
     font-size: 15px;
   }
 
- 
+  .book-link {  
+    color: #0c1d16;
+    font-weight: bolder;
+    font-size: 1.7em;
+  }
 
    
 }
