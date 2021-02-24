@@ -85,6 +85,7 @@ header {
 /* HEADER bg background-color: var(--primary);*/
   
   width: 100%;
+ 
   margin-bottom: 0px;  
 }
 
@@ -187,10 +188,7 @@ a.score {
   color: #F3F3F3;
   
 }
-.book-link {  
-  color: #0c1d16;
-  font-weight: bolder;
-}
+
 
 .link {
   padding: 50px;
@@ -276,8 +274,14 @@ footer {
           margin-top: 1em;
           font-size: 100px;
           font-weight: 300;
-        }     
+        } 
+        
+    .book-link {  
+      color: #0c1d16;
+      font-weight: bolder;
+}   
 }
+
 /*
 @media(max-width: 900px) {
 
@@ -409,6 +413,12 @@ footer {
 	white-space: nowrap;
     font-size: 3.3em;
   
+}
+
+.book-link {  
+  color: #0c1d16;
+  font-weight: bolder;
+  font-size: ;
 }
 
   h3 span {
