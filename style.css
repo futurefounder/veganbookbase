@@ -394,6 +394,9 @@ footer {
     text-align: center;
     margin: 5px;
 }
+.bmc-btn {
+  font-size: 1em !important; 
+}
 
   h1 {
     text-align: center;
