@@ -1,8 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Dosis|Ubuntu');
 
-
-
 @-webkit-keyframes gradientAnimation {
 	0%   { background-position: 0% 30%, 0 0;}
 	50%  { background-position: 100% 70%, 0 0;}
@@ -103,7 +101,6 @@ header {
 }
 
 :any-link {
-
   text-decoration: none;
 }
 
@@ -118,6 +115,18 @@ header {
   
 }
 
+.buttonshare {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #6CADDE;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
 
 .main-nav {
   grid-area: mn;
@@ -175,7 +184,6 @@ header {
  /* -webkit-box-shadow: 0px 0px 100px 0px rgba(12,29,22,1);
   -moz-box-shadow: 0px 0px 100px 0px rgba(12,29,22,1);*/
 
-
 }
 
 .box img {  
@@ -188,7 +196,6 @@ a.score {
   color: #F3F3F3;
   
 }
-
 
 .link {
   padding: 50px;
@@ -229,7 +236,6 @@ font-size: small;
 
 }
 
-
 /* FOOTER */
 footer {
   padding: 20px;
@@ -249,7 +255,6 @@ footer {
   text-decoration: #D8F3DC underline;
 
 }
-
 
 /* MEDIA QUERIES */
 
@@ -464,7 +469,6 @@ img {
 	font-weight: 300;
 }   
 
-
   .box a:hover {
    transition: transform .3s;
      -ms-transform: scale(1);
@@ -495,6 +499,5 @@ img {
     margin: 10px;
   }
 
-   
 }
 
